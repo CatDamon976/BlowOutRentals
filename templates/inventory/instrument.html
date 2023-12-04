@@ -2,6 +2,40 @@
 {% load static %}
 {% block content %} 
    
+       
 
+        <!-- Masthead-->
+        <header class="masthead bg-primary text-white text-center">
+            <div class="container d-flex align-items-center flex-column">
+               
+                <h1 class="masthead-heading text-uppercase mb-0">Blowout Instrument Rentals</h1>
+                <!-- Icon Divider-->
+                <div class="divider-custom divider-light">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <!-- Masthead Subheading-->
+                <p class="masthead-subheading font-weight-light mb-0">Your first choice for instrument rentals since 2023</p>
+            </div>
+        </header>
+        <!-- Portfolio Section-->
+        
+        <br><br><br>
+        
+        <a href="{% url 'trumpet_view' 'Trumpet' 37 %}">
+            <img src="{% static 'assets/img/showtrumpet.jpg' %}" alt="Trumpet" ></img>
+        </a>
+         <br><br><br>
+    
+        
+                    <!-- Portfolio Item 2-->
+               
+        <!-- About Section-->
+        
+     
+        <!-- Contact Section-->
+        
 
 {% endblock %} 
+

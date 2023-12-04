@@ -1,0 +1,33 @@
+
+{% extends 'base.html' %}
+{% load static %}
+{% block content %} 
+        <!-- Masthead-->
+        <header class="masthead bg-primary text-white text-center">
+            <div class="container d-flex align-items-center flex-column">
+               
+                <h1 class="masthead-heading text-uppercase mb-0">Blowout Instrument Rentals</h1>
+                <!-- Icon Divider-->
+                <div class="divider-custom divider-light">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <!-- Masthead Subheading-->
+                <p class="masthead-subheading font-weight-light mb-0">Your first choice for instrument rentals since 2023</p>
+            </div>
+        </header>
+        <!-- Portfolio Section-->
+       
+        <!-- About Section-->
+        <br><br><br>
+        <p class="masthead-subheading font-weight-light mb-0">&emsp;You have selected the Trumpet</p>
+        <a href="{% url 'trumpet_view' 'Trumpet' 37 %}">
+            <img src="{% static 'assets/img/trumpet.jpg' %}" alt="Trumpet" ></img>
+            <p class="masthead-subheading font-weight-light mb-0">&emsp;$37 per month</p>
+        </a>
+         <br><br><br>
+     
+        <!-- Contact Section-->
+                 
+{% endblock %} 
